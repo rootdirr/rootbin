@@ -56,7 +56,7 @@ def navi_embed(text, color=0x00aaff, thumbnail=True):
     embed = discord.Embed(title="NAVI • TERMINAL", description=text, color=color)
     if thumbnail:
         embed.set_thumbnail(url="https://i.ibb.co/kg532m6B/avatars-000615381687-t475ap-t240x240-removebg-preview.png")
-    embed.set_footer(text="rootnv Multitool • https://github.com/rootdirr/rootnvtool", icon_url="https://i.ibb.co/kg532m6B/avatars-000615381687-t475ap-t240x240-removebg-preview.png")
+    embed.set_footer(text="rootnv tool • https://github.com/rootdirr/rootnvtool", icon_url="https://i.ibb.co/kg532m6B/avatars-000615381687-t475ap-t240x240-removebg-preview.png")
     return embed
 
 
